@@ -4,11 +4,11 @@ from abc import ABC, abstractmethod, abstractproperty
 class ControleRemoto(ABC):
     @abstractmethod
     def ligar(self):
-        print("123")
+        pass
 
     @abstractmethod
     def desligar(self):
-        print("123")
+        pass
 
     @property
     @abstractproperty
