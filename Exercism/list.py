@@ -3,7 +3,6 @@
 Python list documentation: https://docs.python.org/3/tutorial/datastructures.html
 """
 from statistics import mean
-from statistics import median
 
 def get_rounds(number) -> list:
     """Create a list containing the current and next two round numbers.
@@ -66,7 +65,7 @@ def average_even_is_average_odd(hand):
     :param hand: list - cards in hand.
     :return: bool - are even and odd averages equal?
     """
-    even = []
+    """ even = []
     odd = []
     for i in range(0,(len(hand)),1):
         if i % 2 == 0:
@@ -74,7 +73,8 @@ def average_even_is_average_odd(hand):
         else:
             odd.append(hand[i])
 
-    return mean(even) == mean(odd)
+    return mean(even) == mean(odd) """
+    return card_average(hand[::2]) == card_average(hand[1::2])
 
 
 def maybe_double_last(hand):
